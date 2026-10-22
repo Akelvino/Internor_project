@@ -4,8 +4,8 @@ const Hambug = document.getElementById("hambug")
 
 Hambug.addEventListener("click", ()=>{
    const wrapper = navMenu.parentElement;
-    wrapper.classList.toggle('max-h-0');
-    wrapper.classList.toggle('max-h-96');
+   wrapper.classList.toggle('max-h-0');
+   wrapper.classList.toggle('max-h-96');
 
 
     Hambug.classList.toggle("ri-menu-4-line");
