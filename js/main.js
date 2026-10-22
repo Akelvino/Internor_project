@@ -11,3 +11,28 @@ Hambug.addEventListener("click", ()=>{
     Hambug.classList.toggle("ri-menu-4-line");
     Hambug.classList.toggle("ri-close-large-fill");
 })
+
+
+const swiper = new Swiper('.swiper', {
+
+    loop: true,
+
+    pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  slidesPerView:3,
+  spaceBetween:20,
+  breakpoints:{
+    320:{
+        slidesPerView:1
+    },
+    968:{
+        slidesPerView:2
+    },
+    1200:{
+        slidesPerView:3
+    },
+  },
+})

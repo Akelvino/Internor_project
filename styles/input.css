@@ -69,3 +69,7 @@
 .btn-accent{
     @apply bg-accent hover:bg-accent-hover;
 }
+
+.swiper-pagination-bullet{
+    @apply !bg-primary;
+}

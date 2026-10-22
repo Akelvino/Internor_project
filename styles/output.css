@@ -9,13 +9,10 @@
       "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-pink-200: oklch(89.9% 0.061 343.231);
     --color-gray-100: oklch(96.7% 0.003 264.542);
     --color-white: #fff;
     --spacing: 0.25rem;
     --container-md: 28rem;
-    --container-lg: 32rem;
-    --container-xl: 36rem;
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
     --text-4xl: 2.25rem;
@@ -36,6 +33,7 @@
     --color-primary-hover: #343e4a;
     --color-secondary: #4d5053;
     --color-accent: #cda274;
+    --color-accent-secondary: #f4f0ec;
     --color-accent-hover: #b88c5d;
     --background-image-hero: url('../assets/Images/hero/bg.jpg');
     --background-image-grid: url('../assets/Images/grid.png');
@@ -262,6 +260,9 @@
   .mb-5 {
     margin-bottom: calc(var(--spacing) * 5);
   }
+  .mb-6 {
+    margin-bottom: calc(var(--spacing) * 6);
+  }
   .mb-8 {
     margin-bottom: calc(var(--spacing) * 8);
   }
@@ -274,14 +275,17 @@
   .hidden {
     display: none;
   }
-  .table {
-    display: table;
-  }
   .h-\[93px\] {
     height: 93px;
   }
   .h-\[98px\] {
     height: 98px;
+  }
+  .h-\[340px\] {
+    height: 340px;
+  }
+  .h-\[400px\] {
+    height: 400px;
   }
   .h-\[640px\] {
     height: 640px;
@@ -298,9 +302,6 @@
   .max-h-96 {
     max-height: calc(var(--spacing) * 96);
   }
-  .w-\[93\] {
-    width: 93;
-  }
   .w-\[93px\] {
     width: 93px;
   }
@@ -310,26 +311,17 @@
   .w-full {
     width: 100%;
   }
-  .max-w-\[453px\] {
-    max-width: 453px;
+  .max-w-\[370px\] {
+    max-width: 370px;
   }
   .max-w-\[1920px\] {
     max-width: 1920px;
   }
-  .max-w-lg {
-    max-width: var(--container-lg);
-  }
   .max-w-md {
     max-width: var(--container-md);
   }
-  .max-w-xl {
-    max-width: var(--container-xl);
-  }
   .flex-1 {
     flex: 1;
-  }
-  .border-collapse {
-    border-collapse: collapse;
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
@@ -370,15 +362,17 @@
   .overflow-hidden {
     overflow: hidden;
   }
+  .rounded-\[30px\] {
+    border-radius: 30px;
+  }
+  .rounded-\[70px\] {
+    border-radius: 70px;
+  }
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-  }
-  .bg-accent {
-    background-color: var(--color-accent);
+  .bg-accent-secondary {
+    background-color: var(--color-accent-secondary);
   }
   .bg-accent\/15 {
     background-color: color-mix(in srgb, #cda274 15%, transparent);
@@ -388,9 +382,6 @@
   }
   .bg-gray-100 {
     background-color: var(--color-gray-100);
-  }
-  .bg-pink-200 {
-    background-color: var(--color-pink-200);
   }
   .bg-white {
     background-color: var(--color-white);
@@ -409,6 +400,18 @@
   }
   .p-0 {
     padding: 0px;
+  }
+  .p-9 {
+    padding: calc(var(--spacing) * 9);
+  }
+  .px-6 {
+    padding-inline: calc(var(--spacing) * 6);
+  }
+  .pt-\[88px\] {
+    padding-top: 88px;
+  }
+  .pb-\[110px\] {
+    padding-bottom: 110px;
   }
   .pl-3 {
     padding-left: calc(var(--spacing) * 3);
@@ -442,16 +445,9 @@
   .text-accent {
     color: var(--color-accent);
   }
-  .underline {
-    text-decoration-line: underline;
-  }
   .shadow-xl {
     --tw-shadow: 0 20px 25px -5px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 8px 10px -6px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .transition {
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
@@ -479,9 +475,6 @@
       position: static;
     }
     .lg\:order-0 {
-      order: 0;
-    }
-    .lg\:order-none {
       order: 0;
     }
     .lg\:mx-0 {
@@ -528,9 +521,6 @@
     }
     .lg\:gap-8 {
       gap: calc(var(--spacing) * 8);
-    }
-    .lg\:gap-\[74\] {
-      gap: 74;
     }
     .lg\:gap-\[74px\] {
       gap: 74px;
@@ -635,6 +625,9 @@
     }
   }
 }
+.swiper-pagination-bullet {
+  background-color: var(--color-primary) !important;
+}
 @property --tw-rotate-x {
   syntax: "*";
   inherits: false;
@@ -654,11 +647,6 @@
 @property --tw-skew-y {
   syntax: "*";
   inherits: false;
-}
-@property --tw-border-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
 }
 @property --tw-font-weight {
   syntax: "*";
@@ -729,11 +717,6 @@
   inherits: false;
   initial-value: 0 0 #0000;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-duration {
   syntax: "*";
   inherits: false;
@@ -754,7 +737,6 @@
       --tw-rotate-z: initial;
       --tw-skew-x: initial;
       --tw-skew-y: initial;
-      --tw-border-style: solid;
       --tw-font-weight: initial;
       --tw-shadow: 0 0 #0000;
       --tw-shadow-color: initial;
@@ -770,7 +752,6 @@
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
-      --tw-outline-style: solid;
       --tw-duration: initial;
       --tw-ease: initial;
       --tw-leading: initial;
