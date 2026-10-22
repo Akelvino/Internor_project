@@ -320,9 +320,6 @@
   .w-\[70px\] {
     width: 70px;
   }
-  .w-\[79\] {
-    width: 79;
-  }
   .w-\[93px\] {
     width: 93px;
   }
@@ -332,20 +329,11 @@
   .w-full {
     width: 100%;
   }
-  .max-w-3 {
-    max-width: calc(var(--spacing) * 3);
-  }
   .max-w-3xl {
     max-width: var(--container-3xl);
   }
-  .max-w-\[5\] {
-    max-width: 5;
-  }
   .max-w-\[370px\] {
     max-width: 370px;
-  }
-  .max-w-\[548\] {
-    max-width: 548;
   }
   .max-w-\[548px\] {
     max-width: 548px;
@@ -377,9 +365,6 @@
   .flex-col {
     flex-direction: column;
   }
-  .flex-row {
-    flex-direction: row;
-  }
   .items-center {
     align-items: center;
   }
@@ -400,12 +385,6 @@
   }
   .gap-12 {
     gap: calc(var(--spacing) * 12);
-  }
-  .gap-\[104px\] {
-    gap: 104px;
-  }
-  .gap-x-\[104px0\] {
-    column-gap: 104px0;
   }
   .gap-x-\[104px\] {
     column-gap: 104px;
@@ -468,6 +447,9 @@
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
   }
+  .py-\[80px\] {
+    padding-block: 80px;
+  }
   .pt-\[88px\] {
     padding-top: 88px;
   }
@@ -482,6 +464,9 @@
   }
   .text-left {
     text-align: left;
+  }
+  .font-primary {
+    font-family: var(--font-primary);
   }
   .text-2xl {
     font-size: var(--text-2xl);
@@ -565,8 +550,8 @@
     .lg\:mx-0 {
       margin-inline: 0px;
     }
-    .lg\:mt-\[10px\] {
-      margin-top: 10px;
+    .lg\:mt-\[20px\] {
+      margin-top: 20px;
     }
     .lg\:mt-\[150px\] {
       margin-top: 150px;
@@ -598,6 +583,9 @@
     .lg\:grid-cols-3 {
       grid-template-columns: repeat(3, minmax(0, 1fr));
     }
+    .lg\:grid-cols-4 {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
     .lg\:flex-row {
       flex-direction: row;
     }
@@ -622,6 +610,13 @@
     .lg\:rounded-bl-\[290px\] {
       border-bottom-left-radius: 290px;
     }
+    .lg\:border-r {
+      border-right-style: var(--tw-border-style);
+      border-right-width: 1px;
+    }
+    .lg\:border-accent {
+      border-color: var(--color-accent);
+    }
     .lg\:bg-grid {
       background-image: var(--background-image-grid);
     }
@@ -636,6 +631,9 @@
     }
     .lg\:p-0 {
       padding: 0px;
+    }
+    .lg\:py-\[150px\] {
+      padding-block: 150px;
     }
     .lg\:pl-0 {
       padding-left: 0px;
