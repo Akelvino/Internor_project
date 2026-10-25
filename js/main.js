@@ -36,3 +36,27 @@ const swiper = new Swiper('.swiper', {
     },
   },
 })
+
+const sr = ScrollReveal({ // Capital 'S' here
+    origin: 'bottom',
+    distance: '60px',
+    duration: 3000,
+    delay: 600,
+    // reset: true,
+});
+
+sr.reveal(".hero__text", { origin: 'top' });
+sr.reveal(".steps_step", {distance: '100px', interval:100});
+sr.reveal(".about__text", {origin: 'left'});
+sr.reveal(".about__image", {origin: 'right', delay:800});
+sr.reveal(".testimonials__bg", {delay:800});
+sr.reveal(".testimonials__title");
+sr.reveal(".testimonial_slider", {delay:100});
+sr.reveal(".brans__img", {delay:600, distance:'100px', interval:100});
+sr.reveal(".work__title");
+sr.reveal(".work__subtitle", {delay:800});
+sr.reveal(".work__grid", {delay:1000});
+sr.reveal(".stats")
+sr.reveal(".stats__items", {distance:'100px', interval:100});
+sr.reveal(".news__title");
+sr.reveal(".news__sutitle", {delay:800});
