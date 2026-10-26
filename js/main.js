@@ -16,7 +16,6 @@ Hambug.addEventListener("click", ()=>{
 const swiper = new Swiper('.swiper', {
 
     loop: true,
-
     pagination: {
     el: '.swiper-pagination',
     clickable: true,
@@ -42,7 +41,7 @@ const sr = ScrollReveal({ // Capital 'S' here
     distance: '60px',
     duration: 3000,
     delay: 600,
-    // reset: true,
+    reset: true,
 });
 
 sr.reveal(".hero__text", { origin: 'top' });
@@ -60,3 +59,8 @@ sr.reveal(".stats")
 sr.reveal(".stats__items", {distance:'100px', interval:100});
 sr.reveal(".news__title");
 sr.reveal(".news__sutitle", {delay:800});
+sr.reveal(".news__item", {distance:'100px', delay:1000, interval:100});
+sr.reveal(".contact__container");
+sr.reveal(".contact__text", {delay:800});
+sr.reveal(".footer__item", {distance:'100px', interval:100});
+sr.reveal(".footer__copyright");
